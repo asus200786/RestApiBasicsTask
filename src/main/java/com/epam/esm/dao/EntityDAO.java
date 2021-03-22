@@ -67,40 +67,10 @@ public interface EntityDAO<T extends Entity> {
     Collection<T> findAll(int offset, int quantity) throws DAOException;
 
     /**
-     * Find by criteria method
-     *
-     * @param finder criteria to find
-     * @throws DAOException
-     */
-    //Collection<T> findBy(EntityFinder<T> finder) throws DAOException;
-
-    /**
-     * Find  a quantity of objects from offset by criteria method
-     *
-     * @param offset quantity of elements to skip
-     * @param quantity quantity of elements to return
-     * @param finder criteria to find
-     * @throws DAOException
-     */
-    //Collection<T> findBy(EntityFinder<T> finder, int offset, int quantity) throws DAOException;
-
-    /**
      * Count all objects method
      *
      * @throws DAOException
      */
     int countAll() throws DAOException;
-
-    /**
-     * Count by criteria method
-     *
-     //* @param finder criteria to find
-     * @throws DAOException
-     */
-    //int countBy(EntityFinder<T> finder) throws DAOException;
-
-    String getTableName();
-
-    String getSchemaName();
 
 }
