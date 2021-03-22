@@ -16,7 +16,7 @@ public class MySQLTagDAO extends MySQLEntityDAO<Tag>{
     @Override
     public Tag read(int id) throws DAOException {
         JdbcTemplate template = getTemplate();
-        template.execute(null);
+        template.execute("null");
         return null;
     }
 
